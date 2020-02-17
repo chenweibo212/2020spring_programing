@@ -1,0 +1,221 @@
+<html>
+    <head>
+        <title>a white room</title>
+        <link rel="stylesheet" href="/css/homepage.css">
+        <script>
+            var clicked = [];
+            var itemClicked = [];
+
+            // function disableLink() { 
+            //     document.getElementById("endlink").disabled = true;
+            //     link = document.getElementById("endlink").href;
+            //     document.getElementById("endlink").removeAttribute('href');
+            // } 
+            // function enableLink() { 
+            //     document.getElementById("endlink").setAttribute("href",link);
+            // } 
+            
+            function clickBtn(){
+                clickBtn = function(){};
+                document.getElementById("item0").innerHTML = "subject puts " + "%%TEXT00%%" + " on the table.";
+                clicked.push("1");
+                if (clicked.length == 6){
+                    setTimeout(function(){
+                        afterClicked();
+                    },3000)
+                }
+            }
+            
+            function clickBtn2(){
+                clickBtn2 = function(){};
+                 document.getElementById("item1").innerHTML = "subject puts " + "%%TEXT01%%" + " on the table.";
+                 clicked.push("1");
+                 if (clicked.length == 6){
+                    setTimeout(function(){
+                        afterClicked();
+                    },3000)
+                 }
+            }
+            function clickBtn3(){
+                clickBtn3 = function(){};
+                 document.getElementById("item2").innerHTML = "subject puts " + "%%TEXT02%%" + " on the table.";
+                 clicked.push("1");
+                 if (clicked.length == 6){
+                    setTimeout(function(){
+                        afterClicked();
+                    },3000)
+                 }
+            }
+            function clickBtn4(){
+                clickBtn4 = function(){};
+                 document.getElementById("item3").innerHTML = "subject puts " + "%%TEXT03%%" + " on the table.";
+                 clicked.push("1");
+                 if (clicked.length == 6){
+                    setTimeout(function(){
+                        afterClicked();
+                    },3000)
+                 }
+            }
+
+            function clickBtn5(){
+                clickBtn5 = function(){};
+                 document.getElementById("item4").innerHTML = "subject puts " + "%%TEXT04%%" + " on the table.";
+                 clicked.push("1");
+                 if (clicked.length == 6){
+                    setTimeout(function(){
+                        afterClicked();
+                    },3000)
+                 }
+            }
+
+            function clickBtn6(){
+                clickBtn6 = function(){};
+                 document.getElementById("item5").innerHTML = "subject puts " + "%%TEXT05%%" + " on the table.";
+                 clicked.push("1");
+                 if (clicked.length == 6){
+                    setTimeout(function(){
+                        afterClicked();
+                    },3000)
+                 }
+            }
+            
+            function afterClicked(){
+                    document.getElementById("clicked").innerHTML = "that's everything.";
+
+                    var linkAll = document.querySelectorAll(".link");
+                    for (var i = 0; i < linkAll.length; i++) {
+                        linkAll[i].style.pointerEvents = "auto";
+                    }
+
+                    var drawerClicked = document.querySelectorAll(".grid-item");
+                    for (var i = 0; i < drawerClicked.length; i++) {
+                        drawerClicked[i].style.color = "black";
+                        drawerClicked[i].style.border = "solid";
+                        drawerClicked[i].style.cursor = "default";
+                }
+
+            }
+
+            function result0(){
+                result0 = function(){};
+                if (clicked.length == 6){
+                    alert("%%result0%%");
+                    document.getElementById("item0").style.textDecoration = "line-through";
+                    itemClicked.push("1");
+                }
+                if (itemClicked.length == 6){
+                    document.getElementById("clickedall").innerHTML = "subject has nowhere to go";
+                }
+            }
+            function result1(){
+                result1 = function(){};
+                if (clicked.length == 6){
+                    alert("%%result1%%");
+                    document.getElementById("item1").style.textDecoration = "line-through";
+                    itemClicked.push("1");
+                }
+                if (itemClicked.length == 6){
+                    document.getElementById("clickedall").innerHTML = "subject has nowhere to go";
+                }
+            }
+            function result2(){
+                result2 = function(){};
+                if (clicked.length == 6){
+                    alert("%%result2%%");
+                    document.getElementById("item2").style.textDecoration = "line-through";
+                    itemClicked.push("1");
+                }
+                if (itemClicked.length == 6){
+                    document.getElementById("clickedall").innerHTML = "subject has nowhere to go";
+                }
+            }
+            function result3(){
+                result3 = function(){};
+                if (clicked.length == 6){
+                    alert("%%result3%%");
+                    document.getElementById("item3").style.textDecoration = "line-through";
+                    itemClicked.push("1");
+                }
+                if (itemClicked.length == 6){
+                    document.getElementById("clickedall").innerHTML = "subject has nowhere to go";
+                }
+            }
+            function result4(){
+                result4 = function(){};
+                if (clicked.length == 6){
+                    alert("%%result4%%");
+                    document.getElementById("item4").style.textDecoration = "line-through";
+                    itemClicked.push("1");
+                }
+                if (itemClicked.length == 6){
+                    document.getElementById("clickedall").innerHTML = "subject has nowhere to go";
+                }
+            }
+            function result5(){
+                result5 = function(){};
+                if (clicked.length == 6){
+                    alert("%%result5%%");
+                    document.getElementById("item5").style.textDecoration = "line-through";
+                    itemClicked.push("1");
+                }
+                if (itemClicked.length == 6){
+                    document.getElementById("clickedall").innerHTML = "subject has nowhere to go.";
+                }
+            }
+
+            function anotherWay(){
+                document.getElementById("escaping").innerHTML = "";
+                document.getElementById("opendoor").innerHTML = "wallwallwallwallwallwallwall--anopeneddoor--wallwallwallwallwallwallwallwallwallwallwallwallwallwallwallwallwallwal";
+                document.getElementById("window0").innerHTML = "wallwallwallwallwallwallwallwallwallwallwallwallwallwallwall---anothersmallwindow---wallwallwallwallwallwallwallwall";
+                document.getElementById("window1").innerHTML ="wallwallwallwallwallwallwallwallwallwallwall---averysmallwindow---</a>wallwallwallwallwall";
+                document.getElementById("escaped").style.color = "black";
+                
+                var drawerAll = document.querySelectorAll(".grid-item");
+
+                for (var i = 0; i < drawerAll.length; i++) {
+                    drawerAll[i].style.pointerEvents = "none";
+                }
+                
+                alert("you find another way.");
+
+                setTimeout(function(){
+                     window.location = "/escaped";
+                },3000)
+            }
+
+        </script>
+    </head>
+
+    <body>
+        <div class="roomholder">
+            <p id="window0" class="wall1">wallwallwallwallwallwallwallwallwallwallwallwallwallwallwall<a href="#" style="color:black;text-decoration: none;" onclick="(function(){alert('too small');})()">---anothersmallwindow---</a>wallwallwallwallwallwallwallwall</p>
+            <p id="opendoor" class="wall2">wallwallwallwallwallwallwall<a href="#" style="color:black;text-decoration: none;" onclick="(function(){alert('locked');})()">---alockeddoor---</a>wallwallwallwallwallwallwallwallwallwallwallwallwallwallwallwallwallwal</p>
+            <p id="window1" class="wall3">wallwallwallwallwallwallwallwallwallwallwall<a href="#" style="color:black;text-decoration: none;" onclick="(function(){alert('too small');})()">---averysmallwindow---</a>wallwallwallwallwall</p>
+            <p class="wall4">wallwallwallwallwallwallwallwallwallwallwallwallwallwallwallwallwallwallwallwallwallwall</p>
+            <p id="escaping" class="subject" onclick="anotherWay()">subject</p>
+            <p id="escaped" class="subject2">subject</p>
+        </div>
+
+        <div class="tableholder"><p class="table">---------------a huge table in the center of the room---------------table table table table table table table table table table table table table table table table table table table table table table table table table table table table table table table table table
+            some house music is playing, the tambourine is in full swing. subject looks down looks down looks down down down down</p>
+            <a id="endlink0" class="link" href="/ending0"><p id="item0" onclick="result0()"></p></a>
+            <a id="endlink1" class="link" href="/ending1"><p id="item1" onclick="result1()"></p></a>
+            <a id="endlink2" class="link" href="/ending2"><p id="item2" onclick="result2()"></p></a>
+            <a id="endlink3" class="link" href="/ending3"><p id="item3" onclick="result3()"></p></a>
+            <a id="endlink4" class="link" href="/ending4"><p id="item4" onclick="result4()"></p></a>
+            <a id="endlink5" class="link" href="/ending5"><p id="item5" onclick="result5()"></p></a>
+            <p id="clicked" class="link2"></p>
+            <p id="clickedall" class="link3"></p>
+        </div>
+
+        <div class="grid-container">
+                <div id="drawer" class="grid-item" onclick="clickBtn()">a drawer</div>
+                <div id="drawer" class="grid-item" onclick="clickBtn2()">a drawer</div>
+                <div id="drawer" class="grid-item" onclick="clickBtn3()">a drawer</div>  
+                <div id="drawer" class="grid-item" onclick="clickBtn4()">a drawer</div>
+                <div id="drawer" class="grid-item" onclick="clickBtn5()">a drawer</div>
+                <div id="drawer" class="grid-item" onclick="clickBtn6()">a drawer</div>  
+        </div>
+
+    </body>
+</html>

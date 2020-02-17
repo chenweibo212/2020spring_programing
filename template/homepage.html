@@ -1,0 +1,71 @@
+<html>
+    <head>
+    <title>nothing here</title>
+    <link rel="stylesheet" href="/css/homepage.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script>
+        setTimeout(function () {
+            document.getElementById("first").innerHTML = "a new subject has entered.";
+                setTimeout(function () {
+                    document.getElementById("second").innerHTML = "subject logged in %%TIME%%.";
+                        setTimeout(function () {
+                            document.getElementById("milestone").innerHTML = "milestone: subject has been on this page for 35 seconds.";
+                                setTimeout(function(){
+                                    document.getElementById("newpage").innerHTML = "subject is very patient. as a token of appreciation, it's time for something new.";
+                                        setTimeout(function(){
+                                            window.location = "/room";
+                                        },3000)
+                                },3000)
+                        },31000)
+                },2000)
+        },2000)
+
+        var clicks = 0;
+        function clickCounter() {
+            var button = document.querySelector(".abutton");
+            var changeTop = (Math.random() * 200);
+            var changeLeft = (Math.random() * 200);
+            $(".abutton").css("margin-top", changeTop + "px");
+            $(".abutton").css("margin-left", changeLeft + "px");
+            clicks += 1;
+
+            if (clicks > 10){
+                document.getElementById("clicked").innerHTML = "subject has clicked a button over 10 times.";
+            }
+            if (clicks > 20){
+                document.getElementById("clickedL2").innerHTML = "subject has clicked a button over 20 times.";
+                setTimeout(function(){
+                    document.getElementById("clickedL3").innerHTML = "but nothing happened.";
+                },2000)
+            }
+        }
+
+        $(function(){
+            $(".bButton").on({
+                mouseover:function(){
+                $(this).css({
+                    left:(Math.random()* ($(window).width() - $("button").width()))+"px",
+                    top:(Math.random()*($(window).height() - $("button").height()))+"px",
+                });
+            }  
+        });
+});
+      </script>
+    </head>
+
+    <body>
+        <div>
+            <p id="newpage"></p>
+            <p id="milestone"></p>
+            <p id="clickedL3"></p>
+            <p id="clickedL2"></p>
+            <p id="clicked"></p>
+            <p id="second"></p>
+            <p id="first"></p>
+            <p>...</p>
+        </div>
+
+        <button id="aButton" class = "aButton" onclick="clickCounter()">a button</button>
+        <button id="bButton" class = "bButton">another button</button>
+    </body>
+</html>

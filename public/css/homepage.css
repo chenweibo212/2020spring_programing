@@ -1,0 +1,147 @@
+
+
+.aButton {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.bButton {
+  cursor: pointer;
+  position: absolute;
+  top: 90%;
+  left: 90%;
+}
+
+.buttonholder {
+  text-align: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.roomholder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width:800px;
+  height:600px;
+  /* border:2px solid black; */
+}
+
+.wall1{
+  width:800px;
+  margin-top:-10px;
+  margin-left:5px;
+  background:white;
+}
+
+.wall2{
+  width:800px;
+  margin-top:580px;
+  margin-left:5px;
+  background:white;
+}
+
+.wall3{
+  margin-top:-620px;
+  margin-left:0px;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  background:white;
+}
+
+.wall4{
+  margin-top:-600px;
+  margin-left:800px;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  background:white;
+}
+
+.subject{
+  font-size:30px;
+  margin-top:-80px;
+  margin-left:50px;
+}
+
+.subject2{
+  font-size:30px;
+  margin-top:120px;
+  margin-left:210px;
+  color:white;
+}
+
+.tableholder {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width:400px;
+  height:300px;
+  /* border:2px solid black; */
+}
+
+.table {
+  margin-top:0px;
+  width:400px;
+  overflow-wrap: break-word;
+}
+
+.grid-container {
+  position: absolute;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  top: 59%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width:400px;
+  height:100px;
+}
+
+.grid-item {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.8);
+  /* border: 1px solid rgba(0, 0, 0, 0.8); */
+  text-align: center;
+  color:white;
+}
+
+.grid-item:hover {
+  color: black;
+  border: 1px dotted rgba(0, 0, 0, 0.8);
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.link {
+  color: black;
+  text-decoration: none;
+  pointer-events: none;
+  line-height: 10%;
+  text-align: center;
+}
+
+.link2 {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  line-height: 80%;
+}
+
+
+.link3 {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  line-height: 10%;
+}

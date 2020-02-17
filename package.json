@@ -1,0 +1,21 @@
+{
+  "name": "code",
+  "version": "1.0.0",
+  "description": "intro to express",
+  "main": "intro.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "weibo",
+  "license": "ISC",
+  "dependencies": {
+    "chance": "^1.1.4",
+    "express": "^4.17.1",
+    "iohook": "^0.6.5",
+    "mouse-position": "^2.1.0",
+    "random-int": "^2.0.1",
+    "robotjs": "^0.6.0",
+    "shuffle-array": "^1.0.1",
+    "unique-random-array": "^2.0.0"
+  }
+}
